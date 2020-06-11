@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="866.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home_work4_query.QueryController">
+    <stylesheets>
+        <URL value="@query.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableview" prefHeight="617.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="tcid" prefWidth="127.0" text="Studant ID" />
+            <TableColumn fx:id="tcname" prefWidth="130.0" text="Studant Name" />
+            <TableColumn fx:id="tcmajor" prefWidth="139.0" text="Major" />
+            <TableColumn fx:id="tcgrade" prefWidth="92.0" text="Grade" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="gu" layoutX="500.0" layoutY="86.0" prefHeight="375.0" prefWidth="332.0" />
+      <JFXButton layoutX="562.0" layoutY="508.0" onAction="#excuteHandel" prefHeight="57.0" prefWidth="144.0" style="-fx-background-color: #C70039;" stylesheets="@query.css" text="Excute" textFill="#f5efef">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="560.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home_work4_Delet.DeletController">
+    <stylesheets>
+        <URL value="@delet.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableview" prefHeight="491.0" prefWidth="560.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tcName" prefWidth="140.0" text="Studant Name" />
+            <TableColumn fx:id="tcid" prefWidth="140.0" text="Studant ID" />
+            <TableColumn fx:id="tcmajor" prefWidth="140.0" text="Major" />
+            <TableColumn fx:id="tcgrade" prefWidth="140.0" text="Grade" />
+        </columns>
+      </TableView>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" layoutY="498.0" prefHeight="82.0" prefWidth="565.0" style="-fx-background-color: #C70039;">
+         <children>
+            <JFXButton onAction="#DeletHandel" prefHeight="57.0" prefWidth="130.0" style="-fx-background-color: #900C3F;" stylesheets="@delet.css" text="Delet" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../main/remove_16px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

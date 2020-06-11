@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.pan {
+    -fx-background-color:#C70039; 
+
+}
+.but{
+    -fx-background-color:#900C3F;
+    -fx-text-fill:#ffff;
+}
+.but:hover{
+        -fx-background-color:#581845  ;
+
+}
